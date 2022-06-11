@@ -9,4 +9,4 @@ ENV STATIC_DIR=/home/project/mysite/static
 RUN mkdir -p $MEDIA_DIR
 RUN mkdir -p $STATIC_DIR
 
-COPY ./static /home/project/mysite/static
+#COPY ./static /home/project/mysite/static

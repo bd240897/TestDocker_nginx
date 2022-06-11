@@ -3,6 +3,14 @@ version: '3.8'
 services:
   nginx:
     build: ./nginx
+    volumes:
+      - static_volume:/home/project/mysite/static
+      - media_volume:/home/project/mysite/media
     ports:
     - 80:80
     container_name: nginx-demo
+
+
+volumes:
+  static_volume:
+  media_volume:
